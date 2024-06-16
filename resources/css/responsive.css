@@ -69,13 +69,17 @@
 
   .project-container {
     flex-wrap: wrap;
-    gap: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .project-card {
     flex: 0 1 45%;
   }
-
+  h2+p {
+    margin-bottom: 3em;
+  }
 }
 
 /* Large devices (large desktops) */

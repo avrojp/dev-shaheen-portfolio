@@ -416,6 +416,10 @@ h2+p {
   color: #F1FAEE;
   padding: 3px 6px;
   border: 1px solid var(--clr-pinkish);
-  background-color:var(--clr-greyish);
+  background-color:var(--clr-blueish);
   border-radius: 4px;
+}
+.project-links a:hover {
+  background-color:var(--clr-redish);
+transition: all .4s ease-in-out;
 }
