@@ -35,7 +35,7 @@
                <li><a href="#works" class="text-neutral fw-700">WORKS</a></li>
                <li><a href="#contact" class="text-neutral fw-700">CONTACT</a></li>
                <li>
-                  <a target="_blank" href="https://devonrun.com" class="text-neutral fw-700">BLOG</a>
+                  <a target="_blank" href="https://devonrun.com/programming" class="text-neutral fw-700">BLOG</a>
                </li>
             </div>
             <div class="nav-right">
@@ -55,7 +55,7 @@
    <section id="hero">
       <div class="row">
          <div class="hero-image">
-            <img src="./resources/images/av-shaheen.png" alt="" srcset="" class="av-shaheen" />
+            <img src="./resources/images/av-shaheen.png" alt="av shaheen" class="av-shaheen" />
             <div class="social-links-list">
                <a href="https://www.linkedin.com/in/avro-shaheen-593658198" class="social-icon"><i
                      class="fa-brands fa-linkedin"></i></a><a href="mailto:avrostu@gmail.com" class="social-icon"><i
@@ -63,17 +63,16 @@
                         class="fa-brands fa-github"></i></a>
             </div>
          </div>
-
       </div>
       <div class="row">
          <div class="hero-content">
             <h1>Welcome to My Portfolio</h1>
             <p>
                I am a passionate web designer with skills in HTML, CSS, Bootstrap,
-               JavaScript, React.js, and more. Explore my work and let's create
+               JavaScript, and more. Explore my work and let's create
                something amazing together
             </p>
-            <button onclick="window.location.href='#projects'" class="button btn-primary">
+            <button onclick="window.location.href='#works'" class="button btn-primary">
                See My Works
             </button>
          </div>
@@ -82,7 +81,6 @@
    <!-- ----------------------------------------------------------------------- -->
    <!--                                  WORKS                                  -->
    <!-- ----------------------------------------------------------------------- -->
-
    <section id="works">
       <div class="row">
          <h2>WORKS</h2>
@@ -90,8 +88,8 @@
       </div>
       <div class="row">
          <div class="project-container">
-            <div class="project-card">
-               <div class="project-title">Blinqpay Langing Page</div>
+            <fieldset class="project-card">
+               <legend class="project-title">Blinqpay Langing Page</legend>
                <div class="project-screenshot">
                   <img src="./resources/images/blinqpay.png" alt="Blinqpay" />
                </div>
@@ -99,9 +97,9 @@
                   <a href="https://github.com/avrojp/bank-landing-page" class="code">Source Code</a><a
                      href="https://avrojp.github.io/bank-landing-page/" class="live">Live Project</a>
                </div>
-            </div>
-            <div class="project-card">
-               <div class="project-title">CSS Grid Challenge</div>
+            </fieldset>
+            <fieldset class="project-card">
+               <legend class="project-title">CSS Grid Challenge</legend>
                <div class="project-screenshot">
                   <img src="./resources/images/css grid.png" alt="CSS Grid" />
                </div>
@@ -110,9 +108,9 @@
                      href="https://github.com/avrojp/%20frontendmentor-css-grid-challenge/" class="live">Live
                      Project</a>
                </div>
-            </div>
-            <div class="project-card">
-               <div class="project-title">QR Code Component</div>
+            </fieldset>
+            <fieldset class="project-card">
+               <legend class="project-title">QR Code Component</legend>
                <div class="project-screenshot">
                   <img src="./resources/images/QR code component.png" alt="QRCode" />
                </div>
@@ -120,9 +118,9 @@
                   <a href="https://avrojp.github.io/qr-code-component/" class="code">Source Code</a><a
                      href="https://github.com/avrojp/qr-code-component/" class="live">Live Project</a>
                </div>
-            </div>
-            <div class="project-card">
-               <div class="project-title">PingPong Score Keeper</div>
+            </fieldset>
+            <fieldset class="project-card">
+               <legend class="project-title">PingPong Score Keeper</legend>
                <div class="project-screenshot">
                   <img src="./resources/images/Ping Pong Score Keeper.png" alt="Pingpong" />
                </div>
@@ -130,7 +128,7 @@
                   <a href="https://avrojp.github.io/pingpongscore/" class="code">Source Code</a><a
                      href="https://avrojp.github.io/pingpongscore/" class="live">Live Project</a>
                </div>
-            </div>
+            </fieldset>
          </div>
       </div>
    </section>
@@ -143,29 +141,47 @@
          <p>contact details and hiring informations</p>
       </div>
       <div class="row contact-details">
-         <div class="contact-primary text-pinkish fw-600 fs-400">
-            <div class="row">Phone: 01611-220007</div>
-            <div class="row">Email: avrostu@gmail.com</div>
-            <div class="row">Github: https://github.com/avrojp</div>
-            <div class="row">LinkedIn: https://www.linkedin.com/in/avro-shaheen-593658198</div>
-            <div class="row">https://www.linkedin.com/in/avro-shaheen-593658198</div>
+         <div class="contact-primary text-pinkish fw-600 fs-350">
+            <div class="row">─Phone: 01611-220007</div>
+            <div class="row">─Email: avrostu@gmail.com</div>
+            <div class="row">─Github: https://github.com/avrojp</div>
+            <div class="row">─LinkedIn: https://www.linkedin.com/in/avro-shaheen-593658198</div>
          </div>
-         <div class="contact-secondary">
+         <fieldset class="contact-secondary">
+            <legend>
+               <h3><i class="fa-regular fa-envelope"></i> Email Me</h3>
+            </legend>
             <form action="mailto:avrostu@gmail.com" method="post">
                <label for="name">Name</label>
                <input type="text" name="name" id="name">
                <label for="email">Email</label>
                <input type="email" name="email" id="email">
                <label for="message">Message</label>
-               <input type="text" name="message" id="">
-               <input type="submit" value="Send Mail">
+               <input type="text" name="message" id="message" placeholder="Enter your message here">
+               <input type="submit" value="Send Mail" class="send-mail">
             </form>
-
-         </div>
+         </fieldset>
       </div>
    </section>
-
-
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                                 FOOTER                                  -->
+   <!-- ----------------------------------------------------------------------- -->
+   <section id="footer">
+      <div class="row">
+         <h4 class="fw-700">
+            © 2024 AV Shaheen</h4>
+         <p>Passionate Web Developer</p>
+      </div>
+      <div class="row">
+         <h3>Connect with me:</h3>
+         <p class="fw-700 fs-400">
+            <a href="https://github.com/avrojp">GitHub</a> |
+            <a href="https://www.linkedin.com/in/avro-shaheen-593658198">LinkedIn</a> |
+            <a href="https://www.frontendmentor.io/profile/avrojp">Frontend Mentor</a> |
+            <a href="https://devonrun.com">Tech Blog</a>
+         </p>
+      </div>
+   </section>
    <!-- Script Files -->
    <script src="./resources/js/app.js"></script>
 </body>
