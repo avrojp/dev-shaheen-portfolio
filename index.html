@@ -55,8 +55,15 @@
    <section id="hero">
       <div class="row">
          <div class="hero-image">
-            <img src="./resources/images/av-shaheen.png" alt="" srcset="" />
+            <img src="./resources/images/av-shaheen.png" alt="" srcset="" class="av-shaheen" />
+            <div class="social-links-list">
+               <a href="https://www.linkedin.com/in/avro-shaheen-593658198" class="social-icon"><i
+                     class="fa-brands fa-linkedin"></i></a><a href="mailto:avrostu@gmail.com" class="social-icon"><i
+                     class="fa-regular fa-envelope"></i><a href="https://github.com/avrojp" class="social-icon"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
          </div>
+
       </div>
       <div class="row">
          <div class="hero-content">
@@ -64,7 +71,7 @@
             <p>
                I am a passionate web designer with skills in HTML, CSS, Bootstrap,
                JavaScript, React.js, and more. Explore my work and let's create
-               something amazing together.
+               something amazing together
             </p>
             <button onclick="window.location.href='#projects'" class="button btn-primary">
                See My Works
@@ -79,7 +86,7 @@
    <section id="works">
       <div class="row">
          <h2>WORKS</h2>
-         <p>Some of my projects below</p>
+         <p>some of my projects below</p>
       </div>
       <div class="row">
          <div class="project-container">
@@ -127,6 +134,37 @@
          </div>
       </div>
    </section>
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                             Contact Section                             -->
+   <!-- ----------------------------------------------------------------------- -->
+   <section id="contact">
+      <div class="row">
+         <h2>Contact Details</h2>
+         <p>contact details and hiring informations</p>
+      </div>
+      <div class="row contact-details">
+         <div class="contact-primary text-pinkish fw-600 fs-400">
+            <div class="row">Phone: 01611-220007</div>
+            <div class="row">Email: avrostu@gmail.com</div>
+            <div class="row">Github: https://github.com/avrojp</div>
+            <div class="row">LinkedIn: https://www.linkedin.com/in/avro-shaheen-593658198</div>
+            <div class="row">https://www.linkedin.com/in/avro-shaheen-593658198</div>
+         </div>
+         <div class="contact-secondary">
+            <form action="mailto:avrostu@gmail.com" method="post">
+               <label for="name">Name</label>
+               <input type="text" name="name" id="name">
+               <label for="email">Email</label>
+               <input type="email" name="email" id="email">
+               <label for="message">Message</label>
+               <input type="text" name="message" id="">
+               <input type="submit" value="Send Mail">
+            </form>
+
+         </div>
+      </div>
+   </section>
+
 
    <!-- Script Files -->
    <script src="./resources/js/app.js"></script>
