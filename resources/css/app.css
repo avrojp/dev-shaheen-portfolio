@@ -222,6 +222,7 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 999;
+  border-bottom: 1px solid var(--clr-greyish);
 }
 
 .navbar {
@@ -329,7 +330,7 @@ section#hero {
   justify-content: center;
   align-items: center;
   gap: 4em;
-  background-color: var(--clr-blueish);
+  background-color: var(--clr-blueish);background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 h1 {

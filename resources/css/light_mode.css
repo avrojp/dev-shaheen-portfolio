@@ -1,0 +1,22 @@
+header {
+  background-image: linear-gradient(
+    to right,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
+}
+section#hero {
+  background-image: linear-gradient(
+    to right,
+    #3ab5b0 0%,
+    #3d99be 31%,
+    #56317a 100%
+  );
+}
+#works {
+  background-image: linear-gradient(to top, #9890e3 0%, #2c0b69 100%);
+}
+#contact {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
