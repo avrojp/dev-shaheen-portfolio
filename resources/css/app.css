@@ -1,9 +1,9 @@
 :root {
-  --clr-neutral: #F1FAEE;
-  --clr-greyish: #457B9D;
-  --clr-pinkish: #A8DADC;
-  --clr-blueish: #1D3557;
-  --clr-redish: #E63946;
+  --clr-neutral: #f1faee;
+  --clr-greyish: #457b9d;
+  --clr-pinkish: #a8dadc;
+  --clr-blueish: #1d3557;
+  --clr-redish: #e63946;
   --fw-400: 400;
   --fw-700: 700;
   --fw-800: 800;
@@ -214,7 +214,7 @@ section {
 /* HEADER SECTION */
 header {
   background-color: var(--clr-blueish);
-  padding: .5em;
+  padding: 0.5em;
   position: sticky;
   top: 0;
   border-bottom: 1px solid var(--clr-greyish);
@@ -245,7 +245,7 @@ header {
   display: flex;
 }
 
-.navbar-content>div {
+.navbar-content > div {
   width: 100%;
 }
 
@@ -325,7 +325,8 @@ section#hero {
   justify-content: center;
   align-items: center;
   gap: 4em;
-  background-color: var(--clr-blueish);background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-color: var(--clr-blueish);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 h1 {
@@ -336,12 +337,12 @@ h1 {
   text-align: center;
 }
 
-h1+p {
+h1 + p {
   font-size: var(--fs-450);
   font-weight: var(--fw-500);
   color: var(--clr-);
   width: 90%;
-  margin-top: .5em;
+  margin-top: 0.5em;
   color: var(--clr-pinkish);
   text-align: center;
   line-height: 1.2;
@@ -358,7 +359,7 @@ h1+p {
   text-align: center;
   width: 100%;
   margin-top: 2em;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   border-radius: 4px;
   font-family: "Titillium Web";
 }
@@ -392,7 +393,7 @@ h1+p {
 
 .social-icon:hover {
   color: var(--clr-redish);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -409,7 +410,7 @@ h2 {
   color: var(--clr-neutral);
 }
 
-h2+p {
+h2 + p {
   text-align: center;
   color: var(--clr-pinkish);
   font-weight: bold;
@@ -441,7 +442,7 @@ fieldset {
   font-weight: bold;
   color: var(--clr-neutral);
   font-size: var(--fs-450);
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 
 .project-links {
@@ -455,7 +456,7 @@ fieldset {
 
 .project-links a {
   font-family: monospace;
-  color: #F1FAEE;
+  color: #f1faee;
   padding: 3px 6px;
   border: 1px solid var(--clr-pinkish);
   background-color: var(--clr-blueish);
@@ -464,7 +465,7 @@ fieldset {
 
 .project-links a:hover {
   background-color: var(--clr-redish);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -488,7 +489,7 @@ fieldset {
 }
 
 .contact-details div {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .contact-secondary form {
@@ -498,7 +499,7 @@ fieldset {
 
 label {
   color: var(--clr-neutral);
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
@@ -530,7 +531,7 @@ input {
 
 .send-mail:hover {
   background-color: var(--clr-redish);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -542,4 +543,61 @@ input {
   flex-direction: column-reverse;
   justify-content: center;
   gap: 3em;
+}
+/* ----------------------------- Color Switcher ----------------------------- */
+.color-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* The switch - the box around the slider */
+.switch {
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
 }
