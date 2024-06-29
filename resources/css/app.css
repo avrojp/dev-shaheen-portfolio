@@ -116,7 +116,7 @@ a {
 /*                               Basics                               */
 /* -------------------------------------------------------------------------- */
 html {
-  font-size: 100%;
+  font-size: 90%;
 }
 
 body {
@@ -218,6 +218,7 @@ header {
   position: sticky;
   top: 0;
   border-bottom: 1px solid var(--clr-greyish);
+  z-index: 1;
 }
 
 .navbar {
@@ -353,6 +354,7 @@ h1 + p {
 
 .btn-primary {
   font-size: var(--fs-450);
+
   font-weight: var(--fw-700);
   color: var(--clr-neutral);
   background-color: var(--clr-greyish);
@@ -366,6 +368,7 @@ h1 + p {
 
 .btn-primary:hover {
   background-color: var(--clr-redish);
+ text-decoration: underline;
 }
 
 .hero-image img {
@@ -435,7 +438,7 @@ h2 + p {
 }
 
 fieldset {
-  border: 1px dashed rgba(255, 255, 255, 0.315);
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .project-title {
@@ -527,6 +530,7 @@ input {
 
 .send-mail {
   cursor: pointer;
+  width: 100px;
 }
 
 .send-mail:hover {
